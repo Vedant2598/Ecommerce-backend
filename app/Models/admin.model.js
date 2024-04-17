@@ -13,12 +13,12 @@ let adminSchema=new mongoose.Schema({
 
 let adminModel=mongoose.model("admin",adminSchema)
 
-//ADMIN PASSWORD : 12345
+//ADMIN PASSWORD : admin@2598
 
 const adminRootUser=async()=>{
    let data= await adminModel.findOne({username:'admin123'})
    if(!data){
-    await adminModel.create({username:'admin25',password:'$2b$10$el9Lv0iLWvhSnnjMg6JQaOq8YKzvBYTaV4v8/l2Yf5KEdValXqx4q',root:true})
+    await adminModel.create({username:'admin25',password:'$2b$10$0EDcxg.KPdj9g4290Z6SCeUSAn7MJOzIBJc9sUSGocRJJXxgkuxKi',root:true})
    }
 }
 adminRootUser()
