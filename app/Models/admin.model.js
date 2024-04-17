@@ -13,8 +13,6 @@ let adminSchema=new mongoose.Schema({
 
 let adminModel=mongoose.model("admin",adminSchema)
 
-adminModel.createIndexes()
-
 //ADMIN PASSWORD : 12345
 
 const adminRootUser=async()=>{
