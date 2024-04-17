@@ -20,7 +20,7 @@ adminModel.createIndexes()
 const adminRootUser=async()=>{
    let data= await adminModel.findOne({username:'admin123'})
    if(!data){
-    await adminModel.create({username:'admin123',password:'$2b$10$3j3BC4j.38nHZSK9u2vd5.yPbPhUFV6uSi319JqGUtTWADQEdAbLe',root:true})
+    await adminModel.create({username:'admin25',password:'$2b$10$el9Lv0iLWvhSnnjMg6JQaOq8YKzvBYTaV4v8/l2Yf5KEdValXqx4q',root:true})
    }
 }
 adminRootUser()
