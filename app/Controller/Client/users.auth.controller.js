@@ -121,7 +121,7 @@ const registerStep1=async(req,res)=>{
         }
     }
     catch(e){
-        res.send({status:"failed",message:"Internal Server Error"})
+        res.send({status:"failed",message:"Internal Server Error",error:e})
     }
 }
 
