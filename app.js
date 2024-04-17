@@ -16,7 +16,7 @@ const connectDB=require("./app/Configs/db.config")
 const InitializeSocket=require("./app/Sockets/sockets.config")
 
 //MIDDLEWARES USED
-app.use(cors({origin:[process.env.FRONTEND_URL],credentials:true}))
+app.use(cors({origin:process.env.FRONTEND_URL,credentials:true}))
 app.use(express.static("public"))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
