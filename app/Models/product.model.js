@@ -39,6 +39,6 @@ let productSchema=new mongoose.Schema({
 })
 
 let productModel= mongoose.model("products",productSchema)
-productModel.createIndexes({name:1})
+// productModel.createIndexes({name:1})
 
 module.exports=productModel
